@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<script src="eel.js"></script>
+<script src="app.js"></script>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initialscale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Wiki</title>
+</head>
+
+<body onload="request_wiki_data();">
+	<nav>
+		<div class="logo">
+			<h4>Artesia</h4>
+		</div>
+		<ul class="nav-links">
+			<li>
+				<a href="Home.html">Home</a>
+			</li>
+			<li>
+				<a href="Search.html" style="background-color:rgb(225, 127, 0);">Search</a>
+			</li>
+			<li>
+				<a href="Create.html">Create</a>
+			</li>
+		</ul>
+	</nav>
+	<div id="main_page" class="main_page">
+		<input id="srch_bar" class="main_search" type="text" placeholder="Search.."  onkeyup="search_and_display()">
+		<div id="search_results" class="search_results">
+			
+		</div>
+	</div>
+	<script src="" type="text/javascript"></script>
+</body>
+
+</html>

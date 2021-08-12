@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<script src="eel.js"></script>
+<script src="app.js"></script>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initialscale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Wiki</title>
+</head>
+
+<body onload="request_wiki_data();">
+	<nav>
+		<div class="logo">
+			<h4>Artesia</h4>
+		</div>
+		<ul class="nav-links">
+			<li>
+				<a href="Home.html">Home</a>
+			</li>
+			<li>
+				<a href="Search.html">Search</a>
+			</li>
+			<li>
+				<a href="Create.html" style="background-color:rgb(225, 127, 0);">Create</a>
+			</li>
+		</ul>
+	</nav>
+	<div id="main_page" class="main_page">
+		<h2 style="text-align: center; margin-left: 0;">Submit new Wiki item:</h2><br>
+		<input id="wiki_item_id" type="text" placeholder="Search ID.."><br><br>
+		<p style="text-align: center;">Select type:</p><br>
+		<input id="acronym" type="radio" name="wiki_item_type" value="Acronym">
+		<label for="acronym">Acronym</label><br><br>
+		<input id="definition" type="radio" name="wiki_item_type" value="Definition">
+		<label for="definition">Definition</label><br>
+		<br><br>
+		<input id="wiki_item_full" type="text" placeholder="Full name.."><br><br>
+		<textarea id="wiki_item_explanation" class="paragraph_text_in" placeholder="Description.."></textarea><br><br>
+		<input id="wiki_item_submit" class="wiki_item_submit" type="submit" placeholder="Submit" onclick="submit_new_wiki_item()">
+	</div>
+
+	<script src="" type="text/javascript"></script>
+</body>
+
+</html>
